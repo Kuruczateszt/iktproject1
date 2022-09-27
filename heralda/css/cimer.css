@@ -7,6 +7,10 @@ p{
   text-indent: 2em;
 }
 
+a {
+  color: #7F7F7F;
+}
+
 ol li{
   margin-left: 15px;
 }
