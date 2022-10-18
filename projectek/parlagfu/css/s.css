@@ -1,0 +1,45 @@
+body {
+    background-color: #9cee56;
+}
+
+a {
+    color: #999999;
+}
+
+.kulso {
+    width: 980px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    background-color: #509050;
+}
+
+.kulso.td {
+    border: 0;
+}
+
+.belso {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.belso.td {
+    border: 1px;
+}
+
+td {
+    margin: 0;
+}
+
+.fekete_cella {
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
