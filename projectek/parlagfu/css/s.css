@@ -43,3 +43,15 @@ td {
     vertical-align: middle;
 }
 
+.vastag {
+    font-weight: bold;
+}
+
+.kep {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1px;
+    border-style: solid;
+}
+
