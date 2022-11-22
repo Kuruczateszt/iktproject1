@@ -85,6 +85,22 @@ def szoveg_kiir_db():
     for i in range(db):
         print(f"{i+1}: {kiirando}")
 
+def paros_szam_vizsgal():
+    ered = None
+
+    while ered is None:
+        szam = None
+        try:
+            szam = int(input("Adj meg egy páros egész számot"))
+        except ValueError:
+            print("Csak egész számokat adhatsz meg: ")
+            continue
+        if szam % 2 != 0:
+            print("Csak páros számot adhatsz meg")
+        else:
+            ered = szam
+
+    print(f"A megadott páros szám: {ered}")
 
 # jo_napod_van_e()
 # paros_e()
@@ -92,4 +108,5 @@ def szoveg_kiir_db():
 # paros_egy_es_tiz_kozott()
 # egytol_tizig_csokkeno()
 # paratlan_egy_es_tiz_kozott_csokkeno()
-szoveg_kiir_db()
+# szoveg_kiir_db()
+paros_szam_vizsgal()
