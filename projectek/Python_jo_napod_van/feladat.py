@@ -66,9 +66,30 @@ def paratlan_egy_es_tiz_kozott_csokkeno():
         if szam % 2 != 0:
             print(szam)
 
+def szoveg_kiir_db():
+    kiirando = input("Adj meg egy tetszőleges szöveget: ")
+    db = None
+
+    while db is None:
+        szam = None
+        try:
+            szam = int(input("Add meg hányszor szeretnéd kiírni: "))
+        except ValueError:
+            print("Csak egész számokat adhatsz meg: ")
+            continue
+        if szam < 0:
+            print("Csak pozitív számot adhatsz meg")
+        else:
+            db = szam
+
+    for i in range(db):
+        print(f"{i+1}: {kiirando}")
+
+
 # jo_napod_van_e()
 # paros_e()
 # gondoltam_egy_szamra()
 # paros_egy_es_tiz_kozott()
 # egytol_tizig_csokkeno()
-paratlan_egy_es_tiz_kozott_csokkeno()
+# paratlan_egy_es_tiz_kozott_csokkeno()
+szoveg_kiir_db()
