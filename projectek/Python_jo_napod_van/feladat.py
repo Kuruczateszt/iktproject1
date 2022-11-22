@@ -47,6 +47,15 @@ def gondoltam_egy_szamra():
     else:
         print("A gép kisebb számra gondolt")
 
+
+def paros_egy_es_tiz_kozott():
+    szamok = list(range(1, 11))
+    
+    for i in szamok:
+        if i % 2 == 0:
+            print(i)
+
 # jo_napod_van_e()
 # paros_e()
-gondoltam_egy_szamra()
+# gondoltam_egy_szamra()
+paros_egy_es_tiz_kozott()
