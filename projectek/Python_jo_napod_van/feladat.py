@@ -102,6 +102,18 @@ def paros_szam_vizsgal():
 
     print(f"A megadott páros szám: {ered}")
 
+def veletlenszeru_szamok():
+    veletlen_szamok = []
+    db = 0
+    for i in range(21):
+        veletlen_szamok.append(random.randrange(1, 13))
+
+    for ertek in veletlen_szamok:
+        if ertek % 3 == 0:
+            db += 1
+    
+    print(f"hárommal oszthatók darabszáma: {db}")
+
 # jo_napod_van_e()
 # paros_e()
 # gondoltam_egy_szamra()
@@ -109,4 +121,5 @@ def paros_szam_vizsgal():
 # egytol_tizig_csokkeno()
 # paratlan_egy_es_tiz_kozott_csokkeno()
 # szoveg_kiir_db()
-paros_szam_vizsgal()
+# paros_szam_vizsgal()
+veletlenszeru_szamok()
