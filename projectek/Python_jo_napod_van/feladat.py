@@ -51,11 +51,17 @@ def gondoltam_egy_szamra():
 def paros_egy_es_tiz_kozott():
     szamok = list(range(1, 11))
     
-    for i in szamok:
-        if i % 2 == 0:
-            print(i)
+    for szam in szamok:
+        if szam % 2 == 0:
+            print(szam)
+
+def egytol_tizig_csokkeno():
+    szamok = list(range(10, 0, -1))
+    for szam in szamok:
+        print(szam)
 
 # jo_napod_van_e()
 # paros_e()
 # gondoltam_egy_szamra()
-paros_egy_es_tiz_kozott()
+# paros_egy_es_tiz_kozott()
+egytol_tizig_csokkeno()
