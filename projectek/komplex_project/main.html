@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weboldal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        h1,
+        h2,
+        p {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+
+        /*-------------------------------*/
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        /* Oldal tartalma */
+
+        body {
+            background-image: url(background4.jpg);
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-top: 10;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            ;
+        }
+
+        h3 {
+            font-size: 20px;
+            ;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 30px;
+            text-align: justify;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .member {
+            margin: 20px;
+            text-align: center;
+        }
+
+        hr {
+            width: 40%;
+            text-align: center;
+
+        }
+
+
+        /* popup */
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .popup img {
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+        }
+
+        .popup h2,
+        .popup h3 {
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Webshop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="fooldal.html">Főoldal</a></li>
+                <li><a href="noidivat.html">Női divat</a></li>
+                <li><a href="ferfidivat.html">Férfi divat</a></li>
+                <li><a href="kiegeszitok.html">Kiegészítők</a></li>
+                <li><a href="cipok.html">Cipők</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <h1>RÓLUNK</h1>
+        <p>Családunk büszkén ápolja az 1916-ban dédszüleink által alapított divatcég hagyományait. Generációkon átívelő
+            tapasztalattal és szenvedéllyel készítjük ruháinkat, melyek egyediek és kifejezik megrendelőink egyéniségét.
+            Célunk, hogy ügyfeleink örömmel és büszkén viseljék termékeinket, melyek minőségi anyagokból és gondos
+            kézzel készülnek.</p>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Mordecai</h2>
+                <img src="mordecai.webp" class="img-rounded" alt="Mordecai" width="200">
+                <p>Mordecai az egyik főszereplője a Reggeli pofon című rajzfilmnek. Ő egy kék színű, antropomorfikus
+                    harkály, aki parkfelügyelőként dolgozik a Parkban.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Rigby</h2>
+                <img src="rigby.webp" class="img-rounded" alt="Rigby" width="200">
+                <p>Rigby az egyik főszereplője a Reggeli pofon című rajzfilmnek. Ő egy szürke színű, antropomorfikus
+                    mókus, aki parkfelügyelőként dolgozik a Parkban.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Mrs A.</h2>
+                <h3>Director</h3>
+
+                <img src="mrsa.jpg" class="img-rounded" alt="mrsa" width="200">
+                <p>Mrs A. a családi divatcég igazgatója, aki büszkén őrzi dédszülei által alapított vállalkozás
+                    hagyományait. Rendkívül tapasztalt és elkötelezett a divat iránt, és szorosan együttműködik a
+                    menedzsmenttel és a tervezőcsapattal, hogy biztosítsa a minőségi és egyedi ruhakollekciók
+                    elkészítését.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Mr B.</h2>
+                <h3>Manager</h3>
+
+                <img src="mrb.jpg" class="img-rounded" alt="mrb" width="200">
+                <p>Mr B. a családi divatcég menedzsere, aki évek óta dolgozik a vállalatnál. Az üzleti életben és a
+                    divatiparban szerzett széleskörű tapasztalataival és tudásával segíti a csapatot a hatékony és
+                    eredményes működésben.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+                <h2>Ms C.</h2>
+                <h3>Designer</h3>
+
+                <img src="msc.jpg" class="img-rounded" alt="mrb" width="200">
+                <p>Ms C. innovatív tervező, aki az egyediségre és a minőségi anyagokra fókuszál. Ő az, aki elképzeli a
+                    ruhakollekciókat, majd a tervezőcsapattal és az igazgatóval együtt dolgozik a megvalósításukon, hogy
+                    biztosítsák a ruhák magas szintű minőségét és az ügyfelek elégedettségét.</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
